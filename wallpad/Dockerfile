@@ -15,7 +15,7 @@ COPY js /js
 #    npm install serialport --build-from-source=serialport 
 
 # Modify
-RUN apk update
+#RUN apk update
 RUN apk add --no-cache jq npm make gcc g++ python2 linux-headers udev
 WORKDIR /
 COPY package.json /
