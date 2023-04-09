@@ -16,7 +16,7 @@ COPY js /js
 
 # Modify
 RUN apk update
-RUN apk add --no-cache jq npm make gcc g++ python3 linux-headers udev
+RUN apk add --no-cache jq npm make gcc g++ python2 linux-headers udev
 WORKDIR /
 COPY package.json /
 RUN npm install
